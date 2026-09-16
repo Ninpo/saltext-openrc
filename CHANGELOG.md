@@ -3,3 +3,10 @@ The changelog format is based on [Keep a Changelog](https://keepachangelog.com/e
 This project uses [Semantic Versioning](https://semver.org/) - MAJOR.MINOR.PATCH
 
 # Changelog
+
+## 0.1.0 (2026-09-16)
+
+
+### Added
+
+- OpenRC ``service`` execution module, extracted from ``saltext-alpine``.
