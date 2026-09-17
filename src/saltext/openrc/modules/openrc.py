@@ -109,6 +109,20 @@ def stop(name, **_):
     return ret["retcode"] == 0
 
 
+def zap(name, **_):
+    """
+    Manually reset the named service to a stopped state.
+
+    CLI Example:
+
+    .. code-block:: bash
+
+        salt '*' service.zap <service name>
+    """
+    ret = _run(["rc-service", name, "zap"])
+    return ret["retcode"] == 0
+
+
 def restart(name, **_):
     """
     Restart the named service.
