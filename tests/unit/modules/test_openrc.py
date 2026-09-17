@@ -63,7 +63,7 @@ class TestVirtual:
 
 
 # ---------------------------------------------------------------------------
-# start / stop / restart / reload_
+# start / stop / restart / reload_ / zap
 # ---------------------------------------------------------------------------
 
 
@@ -75,6 +75,7 @@ class TestServiceActions:
             ("stop", "stop"),
             ("restart", "restart"),
             ("reload_", "reload"),
+            ("zap", "zap"),
         ],
     )
     def test_returns_true_on_success(self, func, action):
@@ -89,6 +90,7 @@ class TestServiceActions:
             ("stop", "stop"),
             ("restart", "restart"),
             ("reload_", "reload"),
+            ("zap", "zap"),
         ],
     )
     def test_returns_false_on_failure(self, func, action):
@@ -103,6 +105,7 @@ class TestServiceActions:
             ("stop", "stop"),
             ("restart", "restart"),
             ("reload_", "reload"),
+            ("zap", "zap"),
         ],
     )
     def test_calls_rc_service_with_correct_action(self, func, action):

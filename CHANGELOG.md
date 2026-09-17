@@ -4,6 +4,13 @@ This project uses [Semantic Versioning](https://semver.org/) - MAJOR.MINOR.PATCH
 
 # Changelog
 
+## 0.2.0 (2026-09-17)
+
+
+### Added
+
+Support openrc's `zap` call.
+
 ## 0.1.0 (2026-09-16)
 
 
